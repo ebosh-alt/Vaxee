@@ -4,8 +4,8 @@ from aiogram import Bot, Dispatcher
 
 from entity.database import database, BonusSystem, UsdtRequisites
 
-token = '6349598958:AAEV4wTzbaCMALft856RKb-MC9zeeGw3Pe4'
-admin = 123
+token = '7217884803:AAHaE-w8B4WhdPBON-AHqx1fux8xlDZmNTU'
+admin = 5530586693
 channel = '@vaxinvest'
 bot_link = 'https://t.me/Vaxee_bot'
 # bot_link = 'https://t.me/Vaxee_bot'
@@ -19,7 +19,7 @@ bonus_system.create()
 usdt_requisites = UsdtRequisites()
 usdt_requisites.create()
 locale.setlocale(locale.LC_ALL, "ru_RU.UTF-8")
-api_freekassa = "427677bcfaa4bd048280f692d6d0df08"
+
 COUNT_REFERRAL = 300
 AMOUNT_INVEST = 2000
 

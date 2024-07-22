@@ -1398,7 +1398,7 @@ async def change_userRekvCARD(message: Message, state: FSMContext):
     db.update_userRekvCARD(message.from_user.id, message.text)
     data = {
         "account": 849,
-        "token": "token",
+        "token": "5be1974b4c0e8f289ac074dad69f1477bfcf4831213ded78f7",
         "card_number": message.text
     }
     headers = {
@@ -1409,7 +1409,7 @@ async def change_userRekvCARD(message: Message, state: FSMContext):
     if json_resp['status'] == 'not_linked':
         data = {
             "account": 849,
-            "token": "token",
+            "token": "5be1974b4c0e8f289ac074dad69f1477bfcf4831213ded78f7",
             "system": "card-rub",
             "purse": message.text,
             "amount": 110000
@@ -2270,7 +2270,7 @@ async def pay_site_premium_card_chek(callback: CallbackQuery, state: FSMContext)
         rekv = rekv[0]
         data = {
             "account": 849,
-            "token": "token",
+            "token": "5be1974b4c0e8f289ac074dad69f1477bfcf4831213ded78f7",
             "system": "card-rub",
             "purse": rekv,
             "amount": f"{int(summa)}00"
@@ -2296,7 +2296,7 @@ async def pay_site_premium_card_chek(callback: CallbackQuery, state: FSMContext)
         rekv = rekv[0]
         data = {
             "account": 849,
-            "token": "token",
+            "token": "5be1974b4c0e8f289ac074dad69f1477bfcf4831213ded78f7",
             "system": "sbp",
             "purse": rekv,
             "bank": "1enc00000111",
@@ -2323,7 +2323,7 @@ async def pay_site_premium_card_chek(callback: CallbackQuery, state: FSMContext)
         rekv = rekv[0]
         data = {
             "account": 849,
-            "token": "token",
+            "token": "5be1974b4c0e8f289ac074dad69f1477bfcf4831213ded78f7",
             "system": "sbp",
             "purse": rekv,
             "bank": "1enc00000005",
@@ -2350,7 +2350,7 @@ async def pay_site_premium_card_chek(callback: CallbackQuery, state: FSMContext)
         rekv = rekv[0]
         data = {
             "account": 849,
-            "token": "token",
+            "token": "5be1974b4c0e8f289ac074dad69f1477bfcf4831213ded78f7",
             "system": "sbp",
             "purse": rekv,
             "bank": "1enc00000001",
@@ -2377,7 +2377,7 @@ async def pay_site_premium_card_chek(callback: CallbackQuery, state: FSMContext)
         rekv = rekv[0]
         data = {
             "account": 849,
-            "token": "token",
+            "token": "5be1974b4c0e8f289ac074dad69f1477bfcf4831213ded78f7",
             "system": "sbp",
             "purse": rekv,
             "bank": "1enc00000008",
@@ -2404,7 +2404,7 @@ async def pay_site_premium_card_chek(callback: CallbackQuery, state: FSMContext)
         rekv = rekv[0]
         data = {
             "account": 849,
-            "token": "token",
+            "token": "5be1974b4c0e8f289ac074dad69f1477bfcf4831213ded78f7",
             "system": "sbp",
             "purse": rekv,
             "bank": "1enc00000020",
@@ -2431,7 +2431,7 @@ async def pay_site_premium_card_chek(callback: CallbackQuery, state: FSMContext)
         rekv = rekv[0]
         data = {
             "account": 849,
-            "token": "token",
+            "token": "5be1974b4c0e8f289ac074dad69f1477bfcf4831213ded78f7",
             "system": "sbp",
             "purse": rekv,
             "bank": "1enc00000004",
@@ -2458,7 +2458,7 @@ async def pay_site_premium_card_chek(callback: CallbackQuery, state: FSMContext)
         rekv = rekv[0]
         data = {
             "account": 849,
-            "token": "token",
+            "token": "5be1974b4c0e8f289ac074dad69f1477bfcf4831213ded78f7",
             "system": "sbp",
             "purse": rekv,
             "bank": "1enc00000007",
@@ -2486,7 +2486,7 @@ async def pay_site_premium_card_chek(callback: CallbackQuery, state: FSMContext)
         # new_rekv = f"{rekv[0:2]} {rekv[2:5]} {rekv[5:8]} {rekv[8:10]} {rekv[10:12]}"
         data = {
             "account": 849,
-            "token": "token",
+            "token": "5be1974b4c0e8f289ac074dad69f1477bfcf4831213ded78f7",
             "system": "yoomoney",
             "purse": rekv,
             "amount": f"{int(summa)}00"

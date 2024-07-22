@@ -6,7 +6,7 @@ from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKe
 from entity.database import database
 
 """Настройки бота"""
-token = '7208034029:AAHMGvFbBnbjyUDm7aDDrQ0uqhrJ6CyP6uQ'
+token = '7428658677:AAEiCKxU6MstR50Ssu2QVXH2U0v8--E7Ino'
 info_link = 'https://telegra.ph/VaxCoin-informaciya-06-19'
 """"""
 
