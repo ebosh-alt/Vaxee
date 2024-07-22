@@ -2530,7 +2530,7 @@ async def check_promo(message: Message):
     #         await message.answer(f'💯 Промокод активирован!\n💲 На инвестиционный баланс зачислено <b>{promo[1]}₽</b>',
     #                              parse_mode='HTML')
 
-    await message.answer(f'📛 {message.text} - такого промокода нет!')
+    # await message.answer(f'📛 {message.text} - такого промокода нет!')
 
 
 bot_router = router
