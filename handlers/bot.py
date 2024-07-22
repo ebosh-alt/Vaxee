@@ -2509,20 +2509,30 @@ async def pay_site_premium_card_chek(callback: CallbackQuery, state: FSMContext)
 
 @router.message()
 async def check_promo(message: Message):
-    # promo = db.get_promo(message.from_user.id, message.text)
-    all_promo = db.get_all_promo()
-    for promo in all_promo:
-        if message.text == promo:
-            promo_select = db.get_promo(message.from_user.id, promo)
-            res = db.use_promo(message.from_user.id, str(promo_select[0]))
-            if res:
-                return await message.answer(
-                    f'💯 Промокод активирован!\n💲 На инвестиционный баланс зачислено <b>{promo[1]}₽</b>',
-                    parse_mode='HTML')
+    promo = db.get_promo(message.from_user.id, message.text)
+    if promo:
+        res = db.use_promo(message.from_user.id, str(promo[0]))
+        if res:
+            await message.answer(f'💯 Промокод активирован!\n💲 На инвестиционный баланс зачислено <b>{promo[1]}₽</b>',
+                                 parse_mode='HTML')
+        else:
+            await message.answer('📛 Активации промокода закончились или вы уже использовали данный промокод!')
 
-            else:
-                return await message.answer(
-                    '📛 Активации промокода закончились или вы уже использовали данный промокод!')
+# async def check_promo(message: Message):
+    # promo = db.get_promo(message.from_user.id, message.text)
+    # all_promo = db.get_all_promo()
+    # for promo in all_promo:
+    #     if message.text == promo:
+    #         promo_select = db.get_promo(message.from_user.id, promo)
+    #         res = db.use_promo(message.from_user.id, str(promo_select[0]))
+    #         if res:
+    #             return await message.answer(
+    #                 f'💯 Промокод активирован!\n💲 На инвестиционный баланс зачислено <b>{promo[1]}₽</b>',
+    #                 parse_mode='HTML')
+    #
+    #         else:
+    #             return await message.answer(
+    #                 '📛 Активации промокода закончились или вы уже использовали данный промокод!')
 
     # if promo:
     #     res = db.use_promo(message.from_user.id, str(promo[0]))
