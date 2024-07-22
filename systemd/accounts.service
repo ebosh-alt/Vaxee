@@ -1,0 +1,14 @@
+[Unit]
+Description=Telegram Bot
+After=syslog.target
+After=network.target
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/project/Vaxee
+ExecStart=/project/Vaxee/venv/bin/python3 /project/Vaxee/main.py
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
